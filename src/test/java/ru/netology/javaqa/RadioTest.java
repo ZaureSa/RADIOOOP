@@ -390,6 +390,15 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldSetStationQuantity() {
+        Radio radio = new Radio(11);
+
+        Assertions.assertEquals(11, radio.getStationQuantity());
+        Assertions.assertEquals(0, radio.getMinStation());
+        Assertions.assertEquals(10, radio.getMaxStation());
+    }
+
 }
 
 
