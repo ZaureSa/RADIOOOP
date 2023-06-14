@@ -15,4 +15,36 @@ public class Radio {
     private int maxVolume = 100;
     private int minVolume = 0;
     private int stationQuantity = 10;
-}
+
+
+    public void next() {
+        if (currentStation != 9) {
+            currentStation++;
+        } else {
+            currentStation = 0;
+        }
+    }
+
+    public void previous() {
+        if (currentStation != 0) {
+            currentStation--;
+        } else {
+            currentStation = 9;
+        }
+    }
+        public void upVolume () {
+            if (currentStation != 100) {
+                currentVolume++;
+            } else {
+                currentVolume = 100;
+            }
+        }
+
+        public void downVolume () {
+            if (currentVolume > 0) {
+                currentVolume = currentVolume - 1;
+            } else {
+                currentVolume = 0;
+            }
+        }
+    }
