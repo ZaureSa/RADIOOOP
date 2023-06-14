@@ -174,7 +174,7 @@ public class RadioTest {
         Radio radio = new Radio();
 
         radio.setCurrentStation(5);
-        radio.previous();
+        radio.previous ();
 
         int expected = 4;
         int actual = radio.getCurrentStation();
@@ -390,7 +390,16 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-}
+    /// @Test
+    /// public void shouldSetStationQuantity() {
+        /// Radio radio = new Radio(11);
+
+        /// Assertions.assertEquals(11, radio.getStationQuantity());
+        /// Assertions.assertEquals(0, radio.getMinStation());
+        /// Assertions.assertEquals(10, radio.getMaxStation());
+    }
+
+/// }
 
 
 
